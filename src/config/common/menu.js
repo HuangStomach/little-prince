@@ -4,7 +4,11 @@ module.exports = {
     icon: ''
   },
   article: {
-    name: '文章管理',
+    name: '文章公告',
+    icon: ''
+  },
+  file: {
+    name: '文件档案',
     icon: ''
   },
   link: {
