@@ -3,12 +3,8 @@ module.exports = {
     name: '用户管理',
     icon: ''
   },
-  article: {
-    name: '文章管理',
-    icon: ''
-  },
-  link: {
-    name: '友情链接',
+  wa: {
+    name: 'wa',
     icon: ''
   }
 }

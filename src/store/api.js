@@ -24,7 +24,7 @@ export default class Api {
     })
     // 这里因为每次处理的任务并不一定是当前在做的任务 所以commit无法返回准确的信息
   }
-  invoke (method, params = {}) {
+  invoke (method, ...params) {
     if (Reflect.has(this, method) && method !== 'invoke') {
       return Reflect.apply(Reflect.get(this, method), this, params)
     }

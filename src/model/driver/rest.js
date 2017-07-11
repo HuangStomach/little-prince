@@ -1,4 +1,5 @@
 const Axios = require('axios')
+const qs = require('qs')
 
 module.exports = {
   passenger: null,
@@ -8,7 +9,7 @@ module.exports = {
       timeout: 5000,
       headers
     })
-    return this.passenger
+    return this
   },
   fetch ({ resource = '', params = {} }) {
     return this.passenger
@@ -22,7 +23,7 @@ module.exports = {
   },
   post ({ resource = '', params = {} }) {
     return this.passenger
-    .post(resource, params)
+    .post(resource, qs.stringify(params))
     .then(r => Promise.resolve(r.data))
   },
   put ({ resource = '', params = {} }) {

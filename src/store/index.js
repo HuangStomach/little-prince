@@ -6,6 +6,9 @@ Vue.use(Vuex)
 
 export function createStore () {
   return new Vuex.Store({
+    state: {
+      lab: 'common'
+    },
     modules: {
       user
     }

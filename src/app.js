@@ -18,6 +18,8 @@ Object.keys(filters).forEach(key => {
 // Expose a factory function that creates a fresh set of store, router,
 // app instances on each call (which is called for each SSR request)
 export function createApp () {
+  // 不需要mock数据的时候可以注释掉
+  require('test/mock').init()
   // create store and router instances
   const store = createStore()
   const router = createRouter()

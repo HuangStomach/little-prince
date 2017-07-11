@@ -1,6 +1,7 @@
 <template lang="pug">
 div
-  navbar
+  .navbar
+    navbar
   .sidebar
     sidebar
   .content
@@ -19,6 +20,8 @@ export default {
 <style lang="stylus">
 @import '../../public/style/admin.styl'
 
+.navbar
+  box-shadow #aaa 2px 2px 5px
 .sidebar
   width 200px
   position fixed
@@ -29,6 +32,7 @@ export default {
   margin-bottom 0
   background-color #fff
   overflow-y auto
+  box-shadow #aaa 2px 4px 5px
 .content
   position fixed
   top 60px
@@ -36,5 +40,5 @@ export default {
   left 200px
   right 0
   overflow-y scroll
-  padding 30px
+  padding 15px
 </style>
