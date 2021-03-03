@@ -51,7 +51,7 @@
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
     "friendly-errors-webpack-plugin": "^1.6.1",
-    "pug": "^2.0.0-rc.2",
+    "pug": "^3.0.1",
     "rimraf": "^2.6.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
